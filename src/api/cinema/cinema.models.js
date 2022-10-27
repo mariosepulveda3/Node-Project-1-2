@@ -9,7 +9,7 @@ const cinemaSchema = new Schema (
         movies: [{ type: mongoose.Types.ObjectId, ref:""}]
     },
     {
-        timestamps: true
+        timestamps: true // Guarda cuando se crea o se edita el molde
     }
 );
 

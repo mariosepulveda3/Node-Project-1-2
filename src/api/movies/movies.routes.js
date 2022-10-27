@@ -3,6 +3,8 @@ const Movie = require('./movies.model');
 
 const router = express.Router();
 
+//Endpoint, se comunica con otra red y puede hacer diferentes funciones CRUD
+
 router.get('/', async(req, res) => {
     try {
       const allMovies = await Movie.find();
